@@ -26,7 +26,9 @@ for i=1:length(datasets)
     dataset=datasets{i};
     flen=nfeatures(i);
     
-    figure('Visible','on','Position',[0 0 400 600]);
+    %figure('Visible','on','Position',[0 0 400 600]);
+    figure('PaperUnits','points','Position',[0 0 172 200]);
+
     for j=1:length(methods)/3
         fmap=zeros(flen,topF);        
         algorithm = methods{1+(j-1)*3};
@@ -63,20 +65,24 @@ for i=1:length(datasets)
         imagesc(fmapextended'); colormap(flipud(gray));
         hold on
         
-        text(flen+margin,1,sprintf('%3.1f',ssavg),'FontSize',20,...
+        text(flen+margin,1,sprintf('%3.1f',ssavg),'FontSize',8,...
             'HorizontalAlignment', 'right',...
             'VerticalAlignment','top','Color','k');
         
-        ylabel(algorithmDisplay,'FontSize',12,...
+        text(flen+margin,100,sprintf('[%d]',ceil(min(feats.cputimes))),'FontSize',8,...
+            'HorizontalAlignment', 'right',...
+            'VerticalAlignment','bottom','Color',[162 68 10]/255);        
+        
+        ylabel(algorithmDisplay,'FontSize',5,...
             'Interpreter','None',...
             'Color',[162 68 10]/255);
         set(gca,'XTick',[],'YTick',[]);
-        if j == 8 % JMI
-            set(gca,'XTick',[1 flen],'FontSize',12);
-        end
+%         if j == 8 % JMI
+%             set(gca,'XTick',[1 flen]);
+%         end
     end
     set(gcf,'color','w');
-    xlabel('Feature Index','FontSize',12);
+    %xlabel('Feature Index','FontSize',8);
     pdffile=sprintf('../figures/%s_robustness.pdf',dataset);
     fprintf('Creating %s\n',pdffile);
     export_fig(pdffile);

@@ -166,16 +166,16 @@ The PDF files in this folder are created by running the `MATLAB` scripts in the 
 ## The Figures in the Manuscript
 For the interested readers, here is list of the figures used in the manuscript *"Feature Selection Based on High Dimensional Model Representation for Hyperspectral Images"*, and their locations in the repository. To recreate the figures, you should remove all the results and PDF files in `results` and `figures` folder and rerun `findFeatures.py`, and `classification.py`. Then you should run the `MATLAB` scripts to recreate the PDF files. Remember that **SUNDIKEN dataset is not included** in the repository for permission issues, so you will not be  able to recreate those results.
  
-- Figure 6a --> `figures/INDIANPINES_accuracy_svm.pdf`
-- Figure 6b --> `figures/INDIANPINES_accuracy_bayes.pdf`
-- Figure 6c --> `figures/INDIANPINES_accuracy_tree.pdf`
-- Figure 6d --> `figures/BOTSWANA_accuracy_svm.pdf`
-- Figure 6e --> `figures/BOTSWANA_accuracy_bayes.pdf`
-- Figure 6f --> `figures/BOTSWANA_accuracy_tree.pdf`
-- Figure 6g --> `figures/SUNDIKEN_accuracy_svm.pdf`
-- Figure 6h --> `figures/SUNDIKEN_accuracy_bayes.pdf`
-- Figure 6i --> `figures/SUNDIKEN_accuracy_tree.pdf`
-- Figure 7 --> `figures/accuracyAllinOne.pdf`
-- Figure 8a --> `figures/INDIANPINES_robustness.pdf`
-- Figure 8b --> `figures/BOTSWANA_robustness.pdf`
-- Figure 8c --> `figures/SUNDIKEN_robustness.pdf`
+- Figure 4a --> `figures/INDIANPINES_accuracy_svm.pdf`
+- Figure 4b --> `figures/INDIANPINES_accuracy_bayes.pdf`
+- Figure 4c --> `figures/INDIANPINES_accuracy_tree.pdf`
+- Figure 4d --> `figures/BOTSWANA_accuracy_svm.pdf`
+- Figure 4e --> `figures/BOTSWANA_accuracy_bayes.pdf`
+- Figure 4f --> `figures/BOTSWANA_accuracy_tree.pdf`
+- Figure 4g --> `figures/SUNDIKEN_accuracy_svm.pdf`
+- Figure 4h --> `figures/SUNDIKEN_accuracy_bayes.pdf`
+- Figure 4i --> `figures/SUNDIKEN_accuracy_tree.pdf`
+- Figure 5 --> `figures/accuracyAllinOne.pdf`
+- Figure 6a --> `figures/INDIANPINES_robustness.pdf`
+- Figure 6b --> `figures/BOTSWANA_robustness.pdf`
+- Figure 6c --> `figures/SUNDIKEN_robustness.pdf`
