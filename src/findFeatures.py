@@ -20,7 +20,8 @@ def main():
     np.random.seed(0)
     parttypes = {'classification','robustness'}
     methods = {'hdmr','chi2','svmrfe','relieff','infogain','fisher','mrmr','jmi'}
-    datasets = {'SUNDIKEN','INDIANPINES','BOTSWANA'}
+    #datasets = {'SUNDIKEN','INDIANPINES','BOTSWANA'}
+    datasets = {'INDIANPINES','BOTSWANA'}
     for dataset in datasets:
         for parttype in parttypes:
             for method in methods:

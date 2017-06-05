@@ -12,7 +12,8 @@ from sklearn.model_selection import GridSearchCV
 from sklearn import neighbors
 
 def main():
-    datasets = {'SUNDIKEN','INDIANPINES','BOTSWANA'}
+    #datasets = {'SUNDIKEN','INDIANPINES','BOTSWANA'}
+    datasets = {'INDIANPINES','BOTSWANA'}
     classifiers  = {'bayes','tree','svm'}
     methods = {'hdmr','chi2','svmrfe','relieff','infogain','fisher','mrmr','jmi'}
     for dataset in datasets:
