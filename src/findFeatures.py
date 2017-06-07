@@ -57,7 +57,7 @@ def find_features(method,dataset,parttype):
     n_samples, n_trials   = P.shape
 
     if method != 'chi2': 
-        for i in range(n_features):
+        for i in list(range(n_features)):
             X[:,i] = (X[:,i]-np.min(X[:,i]))/(np.max(X[:,i])-np.min(X[:,i]))
 
     features = np.zeros((n_features,n_trials))
@@ -65,8 +65,8 @@ def find_features(method,dataset,parttype):
 
     num_cores = multiprocessing.cpu_count()
     print 'Number of cores: %d' % (num_cores)
-    results = Parallel(n_jobs=num_cores)(delayed(run_fold)(trial,P,X,y,method,dataset,parttype) for trial in range(n_trials))
-    for trial in range(n_trials):
+    results = Parallel(n_jobs=num_cores)(delayed(run_fold)(trial,P,X,y,method,dataset,parttype) for trial in list(range(n_trials)))
+    for trial in list(range(n_trials)):
         result = results[trial]
         cputimes[:,trial] = result['cputime']
         features[:,trial] = result['features']

@@ -48,7 +48,7 @@ def classification(method,classifier,dataset):
     P = par['Partition'];
     n_samples, n_folds    = P.shape
 
-    frange=range(5,n_features,5)
+    frange=list(range(5,n_features,5))
     frange[len(frange)-1]=n_features
 
     accuracies  = np.zeros((n_folds,len(frange)))
