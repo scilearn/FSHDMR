@@ -2,7 +2,7 @@
 This repository is created to give an interested reader an opportunity to repeat all the experiments in the manuscript titled "Feature Selection Based on High Dimensional Model Representation for Hyperspectral Images".
 
 ## Prerequisites
-Python and the packages [`python-pip`](https://pypi.python.org/pypi/pip), [`scipy`](https://www.scipy.org), [`numpy`](http://www.numpy.org), [`sklearn`](http://scikit-learn.org), [`joblib`](https://pypi.python.org/pypi/joblib), and [`scikit-feature`](https://github.com/jundongl/scikit-feature.git) should be installed. For Mac OSX, and Windows you may use [`Brew`](http://brew.sh) and [`Cygwin`](https://www.cygwin.com),respectively. If you have an Ubuntu distribution the following steps will be sufficient. For other distributions, the name of the packages may differ.
+Python (2.x) and the packages [`python-pip`](https://pypi.python.org/pypi/pip), [`scipy`](https://www.scipy.org), [`numpy`](http://www.numpy.org), [`sklearn`](http://scikit-learn.org), [`joblib`](https://pypi.python.org/pypi/joblib), and [`scikit-feature`](https://github.com/jundongl/scikit-feature.git) should be installed. For Mac OSX, and Windows you may use [`Brew`](http://brew.sh) and [`Cygwin`](https://www.cygwin.com),respectively. If you have an Ubuntu distribution the following steps will be sufficient. For other distributions, the name of the packages may differ.
 
 	apt-get install python-pip
 	pip install --upgrade pip
